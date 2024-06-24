@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-color: rgb(164, 207, 164);
+    background-color: #dff1d6;
 }
 
 .quicksand {
@@ -14,7 +14,7 @@ body{
 
 .rajdhani-regular {
     font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
   }
 
@@ -56,7 +56,7 @@ a:visited{
 }
 
 ul li:hover{
-    background-color:rgb(18, 118, 18);
+    background-color:rgb(164, 207, 164);
     padding: 8px;
     transition: 1s;
     border-radius: 50px;
@@ -100,6 +100,7 @@ ul li:hover{
     max-width: 1000px;
     position: relative;
     margin: auto;
+    padding-top: 50px;
   }
 
   .carouselPics {
@@ -141,17 +142,9 @@ ul li:hover{
 
 
 .aboutUs {
-    background-color: rgb(164, 207, 164);
-    color: white;
+    background-color: #dff1d6;
+    color: #2c4f31;
     padding: 20px;
-}
-
-.containerAboutUs {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 30px;
-    gap: 20px;
-    align-items: center;
 }
 
 h2 {
@@ -161,14 +154,6 @@ h2 {
 .space {
     margin-top: 20px;
     letter-spacing: 3px;
-}
-
-.picAboutUs {
-    background-image: url("/img/recycle.png");
-}
-
-.pAboutUs {
-    padding: 50px;
 }
 
 .container {
@@ -182,21 +167,21 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 300px;
     margin-bottom: 20px;
     border-radius: 25px;
 }
 
 .pic1 {
-    background-image: url("https://blog.maestrus.com/wp-content/uploads/1970/01/721_3_1_treetrimmer.jpg");
+    background-image: url("/img/objetivos.jpg");
 }
 
 .pic2 {
-    background-image: url("https://marcusmarques.com.br/wp-content/uploads/2023/02/visao-empresa.jpg");
+    background-image: url("/img/missao.jpg");
 }
 
 .pic3 {
-    background-image: url("https://cdn-gchnp.nitrocdn.com/zFHnxXPzHswlfVgtjDuxrlpfUimJlnAG/assets/images/optimized/rev-8474984/novaamerica.net/wp-content/uploads/2020/05/CNAE-2-1024x597.jpg");
+    background-image: url("/img/visao.jpg");
 }
 
 .pic4 {
@@ -207,6 +192,8 @@ h2 {
     background-color:rgb(79, 124, 84);
     padding: 15px;
     border-radius: 25px;
+    color: #dff1d6;
+    transition: 0.5s;
 }
 
 h1 {
@@ -220,42 +207,24 @@ p {
     text-align: justify;
 }
 
+
 footer {
     background-color:rgb(79, 124, 84);
     color: white;
 }
 
-input{
-    border-radius: 20px;
-}
-
-input[type=submit] {
-    width: 80px;
-    height: 20px;
-    background-color:white;
-    border-radius: 30px;
-}
-
-input[type=submit]:hover{
-    background-color: rgb(18, 118, 18);
-}
-
-input:focus{
-    background-color:rgb(164, 207, 164);
-    opacity: 50;
-    border-radius: 10px;
-}
-
 .containerFooter {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     padding: 30px;
     justify-items: center;
 }
 
 .footerHover:hover{
-    background-color: rgb(18, 118, 18);
-    border-radius: 20px;
+    background-color: rgb(164, 207, 164);
+    color: rgb(79, 124, 84);
+    border-radius: 50px;
+    transition: 0.5s;
 }
 
 .footerHoverImg:hover {
@@ -264,7 +233,7 @@ input:focus{
 }
 
 .rights {
-    background-color: rgb(164, 207, 164);
+    background-color: #dff1d6;
     color: black;
     text-align: center;
     font-size: 8pt;
@@ -273,7 +242,6 @@ input:focus{
 .social {
     padding: 5px;
 }
-
 
 .tooltip .tooltiptext {
     visibility: hidden;

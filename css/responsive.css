@@ -34,28 +34,21 @@
         margin-left: 10px;
         margin-top: 3px;
     }
-
-    .picAboutUs{
-        width: 300px;
-    }
     
-    .containerAboutUs {
-        grid-template-columns: repeat(1,1fr);
-        padding: 0;
-    }
-
     .container {
         grid-template-columns: repeat(1,1fr);
     }
     
-    .containerEquipe {
-        grid-template-columns: repeat(2,1fr);
-    }
-
     .containerFooter {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
-        grid-row-gap: 30px ;
+    }
+
+    .footerItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -95,24 +88,18 @@
         margin-right:20px;
     }
 
-    .containerAboutUs {
-        grid-template-columns: repeat(1,1fr);
-        padding: 0;
-    }
-
     .container {
         grid-template-columns: repeat(1,1fr);
-    }
-
-    .containerEquipe {
-        grid-template-columns: repeat(2,1fr);
     }
 
     .containerFooter {
         grid-template-columns: repeat(2,1fr);
         justify-items: flex-start;
         gap: 10px;
-        grid-row-gap: 30px ;
+        grid-row-gap: 10px ;
+    }
+    .menufooter{
+        display: flex;
     }
 }
 
@@ -147,18 +134,13 @@
         margin-left: 20px;
     }
 
-    .containerAboutUs {
-        grid-template-columns: repeat(1,1fr);
-        padding: 0;
-    }
-
     .container {
         grid-template-columns: repeat(1,1fr);
     }
 
 
     .containerFooter {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
         justify-items: flex-start;
         grid-row-gap: 30px ;
     }
@@ -173,17 +155,12 @@
         margin-top: 5px;
     }
 
-    .containerAboutUs {
-        grid-template-columns: repeat(2,1fr);
-        padding: 0;
-    }
-
     .container {
-        grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
     }
 
     .containerFooter {
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
 
 }
@@ -208,7 +185,7 @@
     }
 
     .containerFooter {
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
    
 }
