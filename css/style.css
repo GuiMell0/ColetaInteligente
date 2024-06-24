@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: rgb(164, 207, 164);
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color:rgb(79, 124, 84);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+ul li {
+    display: inline-block;
+    justify-content: space-around;
+    margin: 10px;
+    font-size: 15px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.logoImg {
+    width: 60px;
+    border-radius: 50%;
+}
+
+ul li:hover{
+    background-color:rgb(18, 118, 18);
+    padding: 8px;
+    transition: 1s;
+    border-radius: 50px;
+}
+
+.hamburguerMenu {
+    display: none;
+}
+
+.off-screen-menu {
+    display: none;
+    background-color:rgb(79, 124, 84);
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -800px;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.carousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .carouselPics {
+    display: none;
+}
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .anterior:hover, .proximo:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+.aboutUs {
+    background-color: rgb(164, 207, 164);
+    color: white;
+    padding: 20px;
+}
+
+.containerAboutUs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.space {
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+
+.picAboutUs {
+    background-image: url("/img/recycle.png");
+}
+
+.pAboutUs {
+    padding: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    gap: 50px;
+}
+
+.pic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.pic1 {
+    background-image: url("https://blog.maestrus.com/wp-content/uploads/1970/01/721_3_1_treetrimmer.jpg");
+}
+
+.pic2 {
+    background-image: url("https://marcusmarques.com.br/wp-content/uploads/2023/02/visao-empresa.jpg");
+}
+
+.pic3 {
+    background-image: url("https://cdn-gchnp.nitrocdn.com/zFHnxXPzHswlfVgtjDuxrlpfUimJlnAG/assets/images/optimized/rev-8474984/novaamerica.net/wp-content/uploads/2020/05/CNAE-2-1024x597.jpg");
+}
+
+.pic4 {
+    background-image: url("https://canaldaetica.com.br/wp-content/uploads/o-impacto-do-canal-de-denuncias-no-resultado-da-empresa.jpg");
+}
+
+.containerItem:hover {
+    background-color:rgb(79, 124, 84);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color:rgb(79, 124, 84);
+    color: white;
+}
+
+input[type=submit] {
+    width: 80px;
+    height: 20px;
+    background-color:white;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(18, 118, 18);
+}
+
+input:focus{
+    background-color:rgb(164, 207, 164);
+    opacity: 50;
+}
+
+.containerFooter {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px;
+    justify-items: center;
+}
+
+.footerHover:hover{
+    background-color: rgb(18, 118, 18);
+    border-radius: 2px;
+}
+
+.footerHoverImg:hover {
+    width: 50px;
+    transition: 0.5s;
+}
+
+.rights {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 8pt;
+}
+
+.social {
+    padding: 5px;
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
