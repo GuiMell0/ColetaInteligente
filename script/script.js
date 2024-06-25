@@ -41,21 +41,17 @@ const hamburguerMenu = document.querySelector('.hamburguerMenu');
 const offScreenMenu = document.querySelector(".off-screen-menu");
 const closeIcon = document.querySelector(".close-icon");
 
-
 hamburguerMenu.addEventListener("click", () => {
-  hamburguerMenu.classList.toggle("active");
   offScreenMenu.classList.toggle("active");
 });
 
 closeIcon.addEventListener("click", () => {
-    hamburguerMenu.classList.remove("active");
     offScreenMenu.classList.remove("active");
 });
 
 const menuItems = document.querySelectorAll('.off-screen-menu ul li a');
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
-            hamburguerMenu.classList.remove("active");
             offScreenMenu.classList.remove("active");
         });
 });
