@@ -88,6 +88,7 @@ ul li:hover{
 .borderBackground {
     background: none;
     border: none;
+    width:30px;
 }
 
 .close-icon {
