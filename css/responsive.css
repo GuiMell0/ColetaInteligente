@@ -21,6 +21,10 @@
         font-size: 30pt;
     }
 
+    .borderButton {
+        width:30px;
+    }
+
     .close-icon{
         margin-right:5px;
     }
