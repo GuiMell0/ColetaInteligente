@@ -85,6 +85,11 @@ ul li:hover{
     right: 0;
 }
 
+.borderBackground {
+    background: none;
+    border: none;
+}
+
 .close-icon {
     position: absolute;
     top: 10px;
@@ -103,7 +108,7 @@ ul li:hover{
     padding-top: 50px;
   }
 
-  .carouselPics {
+.carouselPics {
     display: none;
 }
 .anterior, .proximo {
