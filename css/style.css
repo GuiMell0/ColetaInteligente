@@ -96,10 +96,6 @@ ul li:hover{
     right: 10px;
 }
 
-.close-icon svg {
-    width: 24px;
-    height: 24px;
-}
 
 .carousel {
     max-width: 1000px;
